@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="autowired dependency" enabled="true" name="spring_autowired">@${autowiredType:newType(org.springframework.beans.factory.annotation.Autowired)}
+private ${BeanClass} ${_bean};</template><template autoinsert="true" context="java" deleted="false" description="bean definition" enabled="true" name="spring_bean">@${beanType:newType(org.springframework.context.annotation.Bean)}
+public ${BeanClass} ${beanName}() {
+  return new ${BeanClass}();
+}
+</template><template autoinsert="true" context="java-members" deleted="false" description="Spring JUnit rules" enabled="true" name="springjunit">${imp:import(org.junit.ClassRule,org.junit.Rule,org.springframework.test.context.junit4.rules.SpringClassRule,org.springframework.test.context.junit4.rules.SpringMethodRule)}
+@ClassRule
+public static final SpringClassRule SPRING_CLASS_RULE = new SpringClassRule();
+
+@Rule
+public final SpringMethodRule _springMethodRule = new SpringMethodRule();
+
+</template></templates>

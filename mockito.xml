@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java-members" deleted="false" description="argument captor field (Mockito)" enabled="true" name="mockito_captor">@${captorTypeType:newType(org.mockito.Captor)}
+private ${argumentCaptorType:newType(org.mockito.ArgumentCaptor)}&lt;${MockClass}&gt; ${_captor};
+</template><template autoinsert="false" context="java" deleted="false" description="extend with mockito (JUnit 5)" enabled="true" name="mockito_extension">@${extendWithType:newType(org.junit.jupiter.api.extension.ExtendWith)}(${extensionType:newType(org.mockito.junit.jupiter.MockitoExtension)}.class)</template><template autoinsert="true" context="java-members" deleted="false" description="new mock field (Mockito)" enabled="true" name="mockito_inject">@${mockType:newType(org.mockito.InjectMocks)}
+private ${TestSubjectClass} ${_testSubject};
+</template><template autoinsert="true" context="java" deleted="false" description="mockito JUnit rule" enabled="true" name="mockito_junit">@${rule:newType(org.junit.Rule)}
+public ${mockitoRule:newType(org.mockito.junit.MockitoRule)} mockitoRule = ${mockito:newType(org.mockito.junit.MockitoJUnit)}.rule();
+</template><template autoinsert="true" context="java-members" deleted="false" description="new mock field (Mockito)" enabled="true" name="mockito_mock">@${mockType:newType(org.mockito.Mock)}
+private ${MockClass} ${_mock};
+</template></templates>
