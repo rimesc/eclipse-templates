@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="temporary folder rule (JUnit 4)" enabled="true" name="tempfolder">@${beforeType:newType(org.junit.Rule)}
+public final ${tempFolderType:newType(org.junit.rules.TemporaryFolder)} _tempFolder = new TemporaryFolder();
+</template></templates>
